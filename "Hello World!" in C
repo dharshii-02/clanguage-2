@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    char s[100];
+    
+    // Read a full line of input including spaces until a newline is encountered
+    // %[^\\n] tells scanf to read everything that is NOT a newline
+    scanf("%[^\n]%*c", s);
+    
+    // Print the first required string
+    printf("Hello, World!\n");
+    
+    // Print the input string stored in 's'
+    printf("%s", s);
+    
+    return 0;
+}
